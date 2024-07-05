@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("assest/fonts/AntonSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assest/fonts/Poppins-Black.ttf");
+}
+
+body {
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: rgb(7, 227, 137);
+}
+
+.main-header__container{
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav__list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    max-width: 79%;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    @media (min-width:768px) {
+        max-width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+}
+
+.header-item__link{
+    padding: 2px 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header-item__link:hover{
+    transition: 0.5;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.container-general {
+    margin: 0 20px;
+    width: 100%;
+}
+
+.general-info{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.general-info::before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid green;
+    width: 85%;
+    right: 100px;
+    bottom: -20px;
+}
+
+.general-info__img{
+    border-radius: 50%;
+    width: 30%;
+}
+
+.general-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+}
+
+.general-name {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.general-description {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+}

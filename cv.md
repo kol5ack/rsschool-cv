@@ -4,6 +4,13 @@ RSchool-cv
 
 # Kostevich Nikita
 
+```
+
+## Summary
+I love programming. I like solving logical problems and thinking. If something doesn’t work out, I figure it out until I understand it. I have good knowledge of HTML, as well as CSS. My main goal is to learn how to program in JavaScript.
+
+```
+
 ## Contacts
 
 * <nikitakostevich@gmail.com>
