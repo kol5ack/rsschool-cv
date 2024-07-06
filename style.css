@@ -86,7 +86,10 @@ body {
 
 .container-general {
     width: 100%;
+    margin-bottom: 40px;
+    position: re;
 }
+
 
 .general-info{
     position: relative;
@@ -140,9 +143,23 @@ body {
     flex-direction: row;
     margin: 0 0 0 60px;
     flex-wrap: wrap;
+    position: relative;
 }
 
-.main-info__title, .main-summary__title{
+.info::after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px dotted green;
+    width: 100%;
+    bottom: -30px;
+    left: -30px;
+}
+
+.main-info__title, 
+.main-summary__title, 
+.main-code__title,
+.main-laguage__title,
+.main-projects__title{
     text-align: left;
     font-size: 40px;
     margin: 30px 0 0 0;
@@ -190,13 +207,17 @@ body {
     padding: 0;
 }
 
-.main-info__contacts-table__link {
+.main-info__contacts-table__link,
+.main-info__projects-table__link,
+.main-projects-link {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-.main-info__contacts-table__link:hover {
+.main-info__contacts-table__link:hover,
+.main-info__projects-table__link:hover,
+.main-projects-link:hover {
     color: gray;
     text-decoration: underline;
 }
@@ -209,22 +230,37 @@ body {
     color: black;
 }
 
-.main-info__title-list {
+.main-info__title-list,
+.main-language-list,
+.main-projects__title-list {
     list-style-type: none;
     font-size: 18px;
     margin: 0;
 }
 
-.main-info__contacts__description{
+.main-info__contacts__description,
+.main-laguage__contacts__description{
     margin: 0;
     font-size: 18px;
     padding: 0;
 }
 
-.main-footer__photo {
-    
+.main-footer__photo:hover,
+.main-footer__discord:hover {
+    opacity: 0.3;
 }
 
-.main-footer__photo:hover {
-    opacity: 0.3;
+.main-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.main-footer__year {
+    text-align: center;
+    justify-content: center;
+    cursor: default;
 }
