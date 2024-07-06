@@ -1,0 +1,266 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("assest/fonts/AntonSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assest/fonts/Poppins-Black.ttf");
+}
+
+body {
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: rgb(7, 227, 137);
+}
+
+.main-header__container{
+    width: 100%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav__list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    max-width: 79%;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    @media (min-width:768px) {
+        max-width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+}
+
+.header-nav__link{
+    padding: 2px 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header-nav__link:hover{
+    transition: 0.5;
+    opacity: 0.3;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container-general {
+    width: 100%;
+    margin-bottom: 40px;
+    position: re;
+}
+
+
+.general-info{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4f9c64;
+    margin: 0;
+}
+
+.general-info::before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid green;
+    width: 85%;
+    right: 100px;
+    bottom: -20px;
+}
+
+.general-info__img{
+    border-radius: 50%;
+    width: 30%;
+}
+
+.general-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+}
+
+.general-name {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.general-description {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 60px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.info::after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px dotted green;
+    width: 100%;
+    bottom: -30px;
+    left: -30px;
+}
+
+.main-info__title, 
+.main-summary__title, 
+.main-code__title,
+.main-laguage__title,
+.main-projects__title{
+    text-align: left;
+    font-size: 40px;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 60px;
+}
+
+.info__container {
+    position: relative;
+}
+
+.info__container::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid green;
+    width: 75%;
+    bottom: -10px;
+    left: 33px;
+}
+
+.main-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+.mian-info__contacts-table {
+    align-items: center;
+    text-align: left;
+}
+
+.main-summary {
+    width: 50%;
+}
+
+.min-summary__description {
+    margin: 0;
+}
+
+.main-info__contacts-table__name {
+    width: 30%;
+}
+.main-info__contacts-item__name {
+    margin: 0;
+    padding: 0;
+}
+
+.main-info__contacts-table__link,
+.main-info__projects-table__link,
+.main-projects-link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-info__contacts-table__link:hover,
+.main-info__projects-table__link:hover,
+.main-projects-link:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.main-code__description {
+    white-space: pre;
+    margin: 0;
+    padding: 0 300px 0 0;
+    background-color: #bbbfbd; 
+    color: black;
+}
+
+.main-info__title-list,
+.main-language-list,
+.main-projects__title-list {
+    list-style-type: none;
+    font-size: 18px;
+    margin: 0;
+}
+
+.main-info__contacts__description,
+.main-laguage__contacts__description{
+    margin: 0;
+    font-size: 18px;
+    padding: 0;
+}
+
+.main-footer__photo:hover,
+.main-footer__discord:hover {
+    opacity: 0.3;
+}
+
+.main-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.main-footer__year {
+    text-align: center;
+    justify-content: center;
+    cursor: default;
+}
