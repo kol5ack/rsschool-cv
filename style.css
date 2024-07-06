@@ -133,3 +133,28 @@ body {
     font-size: 40px;
     text-align: center;
 }
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 115px;
+}
+
+.main-info__title{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.mian-info__contacts-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: black;
+}
+
+.mian-info__contacts-list a {
+    color: black;
+    text-decoration: none;
+}
