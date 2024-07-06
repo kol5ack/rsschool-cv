@@ -34,9 +34,7 @@ body {
 }
 
 .main-header__container{
-    margin: 0;
     width: 100%;
-    max-width: 100%;
 }
 
 .header-nav {
@@ -66,26 +64,27 @@ body {
     }
 }
 
-.header-item__link{
+.header-nav__link{
     padding: 2px 20px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
-.header-item__link:hover{
+.header-nav__link:hover{
     transition: 0.5;
     opacity: 0.3;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .main-container{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .container-general {
-    margin: 0 20px;
     width: 100%;
 }
 
@@ -95,6 +94,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #4f9c64;
+    margin: 0;
 }
 
 .general-info::before {
@@ -137,24 +138,93 @@ body {
 .info {
     display: flex;
     flex-direction: row;
-    margin: 0 0 0 115px;
+    margin: 0 0 0 60px;
+    flex-wrap: wrap;
 }
 
-.main-info__title{
-    text-align: center;
+.main-info__title, .main-summary__title{
+    text-align: left;
     font-size: 40px;
     margin: 30px 0 0 0;
-    padding: 0;
+    padding: 0 0 0 60px;
 }
 
-.mian-info__contacts-list {
-    padding: 0;
+.info__container {
+    position: relative;
+}
+
+.info__container::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid green;
+    width: 75%;
+    bottom: -10px;
+    left: 33px;
+}
+
+.main-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+.mian-info__contacts-table {
+    align-items: center;
+    text-align: left;
+}
+
+.main-summary {
+    width: 50%;
+}
+
+.min-summary__description {
     margin: 0;
-    list-style: none;
-    color: black;
 }
 
-.mian-info__contacts-list a {
+.main-info__contacts-table__name {
+    width: 30%;
+}
+.main-info__contacts-item__name {
+    margin: 0;
+    padding: 0;
+}
+
+.main-info__contacts-table__link {
     color: black;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.main-info__contacts-table__link:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.main-code__description {
+    white-space: pre;
+    margin: 0;
+    padding: 0 300px 0 0;
+    background-color: #bbbfbd; 
+    color: black;
+}
+
+.main-info__title-list {
+    list-style-type: none;
+    font-size: 18px;
+    margin: 0;
+}
+
+.main-info__contacts__description{
+    margin: 0;
+    font-size: 18px;
+    padding: 0;
+}
+
+.main-footer__photo {
+    
+}
+
+.main-footer__photo:hover {
+    opacity: 0.3;
 }
